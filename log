@@ -55,3 +55,31 @@ list.c:48:1: error: control reaches end of non-void function [-Werror=return-typ
 cc1: all warnings being treated as errors
 Compilation failed
 b91234d
+Thu 24 Aug 2023 01:33:38 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+test.c: In function ‘firstList’:
+test.c:448:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  448 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:468:1: error: expected declaration or statement at end of input
+  468 | }
+      | ^
+test.c:469: error: control reaches end of non-void function [-Werror=return-type]
+At top level:
+test.c:448:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  448 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+In file included from test.c:5:
+list.c:87:6: error: ‘cleanList’ defined but not used [-Werror=unused-function]
+   87 | void cleanList(List * list) {
+      |      ^~~~~~~~~
+list.c:78:8: error: ‘popBack’ defined but not used [-Werror=unused-function]
+   78 | void * popBack(List * list) {
+      |        ^~~~~~~
+list.c:65:6: error: ‘pushBack’ defined but not used [-Werror=unused-function]
+   65 | void pushBack(List * list, void * data) {
+      |      ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a740562
