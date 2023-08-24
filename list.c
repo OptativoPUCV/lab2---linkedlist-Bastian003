@@ -122,7 +122,7 @@ void pushCurrent(List * list, void * data) {
     
     
   }else{
-   list->head=nodo3;
+   
     list->tail=nodo3;
   }
   list->current=nodo3;
