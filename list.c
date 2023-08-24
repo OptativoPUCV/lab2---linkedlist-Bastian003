@@ -150,13 +150,13 @@ void * popCurrent(List * list) {
     
     list->current=list->current->next;
     
-    
+    return list;
   }else{
     list->head=list->current->next;
     
     list->current=list->current->next;
     
-    
+    return list;
   }
   
 }
