@@ -141,12 +141,12 @@ void * popCurrent(List * list) {
   }
 
   
-    if(list->current->prev != NULL){
+  if(list->current->prev != NULL){
     list->current->prev->next=list->current->next;
   }else{
     list->head=list->current->next;
   }
-  list->current=list->current->prev;
+  list->current=list->current->next;
 }
 
 
