@@ -2,3 +2,17 @@ Sun 20 Aug 2023 03:03:38 AM UTC:
  tests:  0|6
 total_score: 0/70
 09c79d6
+Thu 24 Aug 2023 01:23:47 AM UTC: 
+ list.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:36:3: error: expected identifier before ‘return’
+   36 |   return NULL;
+      |   ^~~~~~
+list.c:37:1: error: control reaches end of non-void function [-Werror=return-type]
+   37 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+a2b4646
