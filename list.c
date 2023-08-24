@@ -134,8 +134,8 @@ void * popCurrent(List * list) {
     return list->current;
   }else{
     list->tail=list->current;
-  }
-  
+    return list->tail;
+  } 
 }
   
   
