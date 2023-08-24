@@ -137,7 +137,6 @@ void * popCurrent(List * list) {
   
   
   
-}
 
 void cleanList(List * list) {
     while (list->head != NULL) {
