@@ -129,13 +129,13 @@ void * popBack(List * list) {
 void * popCurrent(List * list) {
   Node* nn = list->current;
   if(list->current->next !=NULL){
-    nn->prev->next=nn->next;
+    nn->next->prev=nn->prev;
   }else{
     list->tail=nn->prev;
     
   }
   if(list->current->prev !=NULL){
-    nn->next->prev=nn->prev;
+    nn->prev->next=nn->next;
   }else{
     list->head=nn->next;
     
