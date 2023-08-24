@@ -134,7 +134,7 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
-  
+   void  * eliminar=list->current;
   if(list->current->next != NULL){
     list->current->next->prev=list->current->prev;
     
@@ -156,7 +156,8 @@ void * popCurrent(List * list) {
     list->current->next->prev=list->current;
     
   }
-  return list;
+  
+  return eliminar;
 }
 
 
