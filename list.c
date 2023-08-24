@@ -134,7 +134,13 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
-    return NULL;
+  if( list->current !=NULL){
+    list->current=NULL;
+  }
+  
+  
+  
+  return NULL;
 }
 
 void cleanList(List * list) {
