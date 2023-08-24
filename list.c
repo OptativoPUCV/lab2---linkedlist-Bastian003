@@ -145,8 +145,8 @@ void * popCurrent(List * list) {
     list->current->prev->next=list->current->next;
   }else{
     list->head=list->current->next;
-  }
-};
+  };
+}
 
 
 void cleanList(List * list) {
